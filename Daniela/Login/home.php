@@ -34,7 +34,7 @@
         <p>Hi, <?= $row["f_name"] . " " . $row["l_name"] ?></p>
         <a href="logout.php?logout">Logout</a>
 
-        <a href="account.php">Account</a>
+        <a href="account.php?id=<?= $row["id"]?>">Account</a>
     </div>
 </body>
 </html>
