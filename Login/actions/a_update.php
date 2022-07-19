@@ -17,9 +17,9 @@ $picture = file_upload($_FILES['picture']);
 if ($picture->error === 0) {
     ($_POST['picture']) == "avatar.jpeg" ?: unlink("../pictures/$_POST[picture]");
     $sql = "UPDATE users SET  f_name = '$fname',
-     l_name = '$lname',pass = '$pass',
+     l_name = '$lname',passwoord = '$pass',
      birthdate = '$birthdate', email = '$email',
-      picture = '$picture', statuss = '$statuss' WHERE id = {$id}";
+      picture = '$picture->fileName', statuss = '$statuss' WHERE id = {$id}";
 } else {
     $sql = "UPDATE users SET  f_name = '$fname',
     l_name = '$lname', passwoord = '$pass',

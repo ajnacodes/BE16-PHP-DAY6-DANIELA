@@ -46,7 +46,7 @@ if ($_GET['id']) {
   <fieldset>
 <h4 class="text-center" >Edit user details</h4>
 
-  <img src="pictures/<?php echo $picture?>" class="rounded" alt="...">
+  <img src="pictures/<?php echo $picture?>"  style="witdh: 10rem; height: 7rem;" class="rounded" alt="...">
 </div>
   <div class="mb-3">
     <label for="" class="form-label">First name</label>
@@ -65,7 +65,7 @@ if ($_GET['id']) {
     <input type="date" class="form-control"  name="birthdate" value="<?php echo $birthdate?>">
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Password</label>
+    <label for="" class="form-label">Password</label>
     <input type="password" class="form-control" name="pass" value="<?php echo $password?>">
 
     <input class="form-control" type="text" name="statuss" placeholder="Status" value="<?php echo $statuss?>"/>
